@@ -49,14 +49,14 @@
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
                   <h3 class="u-align-left u-custom-font u-font-montserrat u-text u-text-1">Sensor readings</h3>
-                  <p class="u-align-justify u-text u-text-2">You can see the last 5 sensor readings from the device located at (lat,long) .&nbsp;</p>
+                  <p class="u-align-justify u-text u-text-2">You can see the last 5 sensor readings from the device located at lat,long - {{lat,long1}} .&nbsp;</p>
                   <img class="u-image u-image-circle u-image-1" src="../static/images/ZEN5-A.jpg" alt="" data-image-width="1600" data-image-height="1067">
                 </div>
               </div>
               <div class="u-align-justify u-container-style u-layout-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-valign-bottom u-container-layout-2">
                   <div class="u-palette-3-light-2 u-shape u-shape-circle u-shape-1"></div>
-                  <p class="u-text u-text-3">The present data shown in below table is taken from data in the region (lat, long).&nbsp;</p>
+                  <p class="u-text u-text-3">The present data shown in below table is taken from data in the region lat,long - {{lat,long1}}.&nbsp;</p>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@
             <tbody class="u-table-body">
               {% for i in range(5) %}
     <tr style="height: 75px;">
-    <td class="u-border-1 u-border-grey-30 u-table-cell">Stan</td>
+    <td class="u-border-1 u-border-grey-30 u-table-cell">{{dt[i]}}</td>
     <td class="u-border-1 u-border-grey-30 u-table-cell">{{nl[i], pl[i], kl[i]}}</td>
     <td class="u-border-1 u-border-grey-30 u-table-cell">{{phl[i]}}</td>
     <td class="u-border-1 u-border-grey-30 u-table-cell">{{templ[i]}}</td>
@@ -168,15 +168,15 @@
         <p>యాపిల్‌లు 25'% గాలి. యాపిల్స్ నీటిలో తేలియాడతాయి ఎందుకంటే వాటి పరిమాణంలో 25'%' నిజానికి గాలి. యాపిల్స్ నీటి కంటే తక్కువ సాంద్రత కలిగి ఉంటాయి, వాటిని ఆపిల్ బాబింగ్‌కు సరైన ఫలంగా మారుస్తాయి. ప్రామాణికమైన లేదా పూర్తి-పరిమాణ ఆపిల్ చెట్లు 30 అడుగుల పొడవు వరకు పెరుగుతాయి మరియు వాటి మొదటి ఫలాలను ఇవ్వడానికి ఆరు సంవత్సరాలు పట్టవచ్చు.</p>
     {% elif predv[4]==16%}
         <p>ఆరెంజ్ ప్రపంచంలోనే అతిపెద్ద సిట్రస్ పండు. ఆరెంజ్ జ్యూస్ అమెరికాలో అత్యంత ప్రజాదరణ పొందిన పండ్ల రసం. ఒక నారింజ చెట్టు ఫలాలను ఉత్పత్తి చేయడానికి 3-5 సంవత్సరాలు పడుతుంది, ఇది చెట్టును కొనుగోలు చేసేటప్పుడు ఎంత పాతది. చివరకు పండ్లను ఉత్పత్తి చేయడం ప్రారంభిస్తుంది, అవి పక్వానికి 7 నుండి 8 నెలలు పడుతుంది.</p>
-    {% elif predv[4]==16%}
+    {% elif predv[4]==17%}
         <p>బొటానికల్‌గా బొప్పాయి ఒక బెర్రీ. ఇది చెట్టు నుండి పెరిగినట్లు కనిపించవచ్చు, కానీ బొప్పాయి నిజానికి ఒక మూలికల పండు. బొప్పాయిని విత్తనం నుండి పండు వరకు పెరగడానికి 6-12 నెలల సమయం పడుతుంది.</p>
-    {% elif predv[4]==16%}
+    {% elif predv[4]==18%}
         <p>సగటున ఒక కొబ్బరి చెట్టు ప్రతి సంవత్సరం 30 పండ్లను ఉత్పత్తి చేస్తుంది, కానీ ఒక చెట్టు సరైన వాతావరణ పరిస్థితులతో సంవత్సరానికి 75 కొబ్బరికాయలను ఉత్పత్తి చేస్తుంది, ఇది చాలా అరుదు. ప్రతి సంవత్సరం సుమారు 61 మిలియన్ టన్నుల కొబ్బరికాయలు ఉత్పత్తి అవుతాయి. కొబ్బరి చెట్టు ఒక్కదాని నుండి పెరుగుతుంది. విత్తనం, ఇది మొత్తం కొబ్బరి, ఫలాలను ఇవ్వడానికి 3 మరియు 8 సంవత్సరాల మధ్య పడుతుంది మరియు 60 మరియు 100 సంవత్సరాల మధ్య జీవిస్తుంది.</p>
-    {% elif predv[4]==16%}
+    {% elif predv[4]==19%}
         <p>భారతదేశం యొక్క అత్యంత ముఖ్యమైన ఫైబర్ మరియు నగదు పంటలలో పత్తి ఒకటి మరియు దేశంలోని పారిశ్రామిక మరియు వ్యవసాయ ఆర్థిక వ్యవస్థలో ప్రధాన పాత్ర పోషిస్తుంది. ఇది పత్తి వస్త్ర పరిశ్రమకు ప్రాథమిక ముడిసరుకు (కాటన్ ఫైబర్) అందిస్తుంది. పత్తి పూర్తిగా పరిపక్వం చెందింది మరియు నాటిన సుమారు 160 రోజుల తర్వాత కోతకు సిద్ధంగా ఉంది. కాయలు తెరిచిన తర్వాత, రైతులు పత్తి మొక్కలను కోతకు సిద్ధం చేయవచ్చు.</p>
-    {% elif predv[4]==16%}
+    {% elif predv[4]==20%}
         <p>జనపనార దాని బహుముఖ ప్రజ్ఞ కారణంగా పత్తి తర్వాత రెండవ అత్యంత ముఖ్యమైన కూరగాయల ఫైబర్. జనపనారను ప్రధానంగా ముడి పత్తి బేల్స్‌ను చుట్టడానికి మరియు బస్తాలు మరియు ముతక గుడ్డను తయారు చేయడానికి గుడ్డను తయారు చేయడానికి ఉపయోగిస్తారు. జనపనారను పండించడానికి, రైతులు సాగు చేసిన నేలపై విత్తనాలను చల్లుతారు. మొక్కలు దాదాపు 15-20 సెం.మీ ఎత్తు ఉన్నప్పుడు, అవి పలుచబడి ఉంటాయి. నాటిన 4 నెలల తర్వాత, కోత ప్రారంభమవుతుంది.</p>
-    {% elif predv[4]==16%}
+    {% elif predv[4]==21%}
         <p>కాఫీని అధిక పరిమాణంలో వినియోగిస్తారు, ఇది ప్రపంచంలోని 2వ అతిపెద్ద వర్తకం వస్తువు, ఇది కేవలం ముడి చమురుతో మాత్రమే అధిగమించబడింది. రకాన్ని బట్టి, కొత్తగా నాటిన కాఫీ చెట్లు ఫలించటానికి దాదాపు 3 నుండి 4 సంవత్సరాలు పడుతుంది.</p>
     {% endif %}</p>
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-default u-text-4">Crop recommendation</h3>
@@ -185,8 +185,22 @@
               <div class="u-container-style u-layout-cell u-palette-4-light-2 u-radius-32 u-shape-round u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
                   <h3 class="u-custom-font u-font-merriweather u-text u-text-default u-text-5">Fertiliser recommendation</h3>
-                  <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                  <p class="u-text u-text-7">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                  <p class="u-text u-text-6">{{ferteng[predv[5]]}}</p>
+                  <p class="u-text u-text-7">{% if predv[5]==0 %}
+        <p>యూరియా అనేక రసాయనాల తయారీలో ఉపయోగించే ముడి పదార్థం. ఫీడ్‌స్టాక్, జిగురు, ఎరువులు, వాణిజ్య ఉత్పత్తులు మరియు రెసిన్ ఉత్పత్తికి కూడా ఇది చాలా అవసరం. ఎంజైమ్ యూరియాతో పాటు ఏదైనా చిన్న మొత్తంలో నేల తేమతో, యూరియా సాధారణంగా హైడ్రోలైజ్ చేసి అమ్మోనియం మరియు కార్బన్ డయాక్సైడ్‌గా మారుతుంది. ఇది 2-4 రోజులలో సంభవిస్తుంది మరియు అధిక pH నేలల్లో త్వరగా జరుగుతుంది.</p>
+    {% elif predv[5]==1%}
+        <p>DAP ఎరువులు మొక్కల పోషణకు P మరియు నైట్రోజన్ (N) యొక్క అద్భుతమైన మూలం. ఇది బాగా కరుగుతుంది మరియు తద్వారా మొక్కలకు లభించే ఫాస్ఫేట్ మరియు అమ్మోనియం విడుదల చేయడానికి మట్టిలో త్వరగా కరిగిపోతుంది. DAP సాధారణంగా విత్తే ముందు బేసల్ మోతాదుగా వర్తించబడుతుంది. తొలి విత్తనం అంకురోత్పత్తి 6 రోజుల కంటే ముందు కాదు మరియు మూలాలు ప్రారంభించబడతాయి.</p>
+    {% elif predv[5]==2%}
+        <p>14-35-14 అనేది అన్ని ప్రధాన పోషకాలను కలిగి ఉన్న సంక్లిష్ట ఎరువులు. నత్రజని, భాస్వరం మరియు పొటాషియం. NPK కాంప్లెక్స్ ఎరువులలో అత్యధిక మొత్తం పోషకాలను కలిగి ఉన్న ఏకైక కాంప్లెక్స్. (మొత్తం పోషకాలు 63%).</p>
+    {% elif predv[5]==3%}
+        <p>28-28 అనేది సంక్లిష్టమైన ఎరువులు, ఇందులో రెండు ప్రధాన పోషకాలు ఉంటాయి. నత్రజని మరియు భాస్వరం. కాంప్లెక్స్ ఎరువులు కలిగిన అత్యధిక నత్రజని ఇది 28%. 19% నత్రజని యూరియా రూపంలో మరియు 9% అమ్మోనియా రూపంలో ఉంటుంది. అమ్మోనియం ఫాస్ఫేట్ యూరియా ప్రిల్‌పై పూత పూయబడింది, దీని కారణంగా యూరియా నుండి వచ్చే నష్టాలు తగ్గించబడతాయి.</p>
+    {% elif predv[5]==4%}
+        <p>17:17:17 ఒక గ్రాన్యులేటెడ్ NPK ఎరువు. ఇది సమాన నిష్పత్తిలో నత్రజని, భాస్వరం మరియు పొటాష్ వంటి ప్రాథమిక పోషకాలను కలిగి ఉంటుంది. ప్రయోజనాలు: ఇది అన్ని పంటలకు ప్రధాన పోషక అవసరాలను తీరుస్తుంది.</p>
+    {% elif predv[5]==5%}
+        <p>20:20 అనేది అమ్మోనియం ఫాస్ఫేట్ యొక్క 40 భాగాలు మరియు అమ్మోనియం సల్ఫేట్ యొక్క 60 భాగాల రసాయన మిశ్రమం. ఇది 20% N మరియు 20% P2O5 కలిగి ఉంటుంది. మొత్తం N అమ్మోనియా రూపంలో ఉంటుంది మరియు P పూర్తిగా నీటిలో కరిగేది.</p>
+    {% elif predv[5]==6%}
+        <p>10:26:26 ఫాస్ఫరస్ మరియు పొటాషియం 1:1 నిష్పత్తిలో ఉంటాయి, NPK ఎరువులలో అత్యధికం. ఇందులో అమ్మోనియాకల్ రూపంలో 7% నైట్రోజన్, నీటిలో కరిగే రూపంలో 26% ఫాస్ఫేట్‌లో 22% మరియు మొత్తం 26% పొటాష్ నీటిలో కరిగే రూపంలో లభిస్తుంది.</p>
+    {% endif %}</p>
                   <img class="u-image u-image-round u-radius-10 u-image-2" src="{{url_for('static', filename=predv[1])}}" alt="" data-image-width="1600" data-image-height="1067">
                   <h4 class="u-text u-text-default u-text-8">{{predv[3]}}<br>
                   </h4>
